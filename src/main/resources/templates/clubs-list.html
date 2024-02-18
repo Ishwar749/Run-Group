@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymelead.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Clubs</title>
+</head>
+<body>
+    <div th:each="club :${clubs}">
+        <img th:src="${club.photoUrl}" />
+        <a th:text="${club.title}"></a>
+    </div>
+</body>
+</html>
